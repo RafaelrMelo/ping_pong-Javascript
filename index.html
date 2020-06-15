@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ping Pong</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="dvjogo">
+            <div id="dvbola"></div>
+            <div id="dvbarraesquerda" class="barra esquerda"></div>
+            <div id="dvbarradireita" class="barra direita"></div>
+        </div>
+        <div id="dvpainel">
+            <input type="text" id="pontosjogador" size="10" readonly="readonly">
+            <label>
+                <button id="inicia">Inicia</button>
+            </label>
+            <input type="text" id="pontoscpu" size="10" readonly="readonly">
+        </div>
+        <div id="perdeu" class="sair">
+            <div>
+                <header>
+                    <h1>Você perdeu</h1>
+                </header>
+                <div class="corpo">
+                    <div class="dvbotao">
+                        <button>Jogar novamente</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="ganhou" class="sair">
+            <div>
+                <header>
+                    <h1>Você Ganhou</h1>
+                </header>
+                <div class="corpo">
+                    <div class="dvbotao">
+                        <button>Jogar novamente</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
