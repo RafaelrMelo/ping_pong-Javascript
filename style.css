@@ -1,6 +1,7 @@
 body{
     margin:0px;
     background-color: #aaa;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 #dvpainel{
     display: flex;
@@ -16,6 +17,7 @@ body{
     height: 500px;
     border: 1px solid rgb(46, 45, 45);
     background-color: rgb(46, 45, 45);
+    box-shadow: 2px 2px 3px #000;
 }
 #dvbola{
     position: absolute;
@@ -25,6 +27,7 @@ body{
     height: 20px;
     background-color: white;
     border-radius:16px;
+    box-shadow: 1px 1px 3px #000;
 }
 .barra{
     position: absolute;
@@ -33,6 +36,7 @@ body{
     background-color:white;
     top: 180px;
     border-radius: 6px;
+    box-shadow: 1px 1px 3px #000;
 }
 .esquerda{
     left: 10px;
@@ -63,6 +67,7 @@ input{
     font-size: 15px;
     font-weight: bold;
     outline: none;
+    box-shadow: 1px 1px 3px #000;
 }
 #inicia:hover{
     background-color: rgb(130, 165, 111);
@@ -126,8 +131,37 @@ input{
     width: 80%;
     height: 55%;
     outline: none;
+    box-shadow: 1px 1px 3px #000;
 }
 #perdeu div .dvbotao button:hover,#ganhou div .dvbotao button:hover{
     background-color: rgb(58, 105, 78);
+    transition: 400ms;
+}
+#jog{
+    display: flex;
+    width: 960px;
+    align-items: center;
+    justify-content: center;
+}
+#jogadores{
+    margin-top: 15px;
+    width: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+#jogadores button{
+    background-color: rgb(133, 189, 21);
+    border: 0;
+    border-radius: 8px;
+    width: 150px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 1px 3px #000;
+}
+#jogadores button:hover{
+    background-color: rgb(98, 138, 20);
     transition: 400ms;
 }
